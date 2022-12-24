@@ -11,7 +11,13 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Frontend Mentor | Ping coming soon page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -26,9 +32,31 @@
     </style>
   </head>
   <body>
-    We are launching soon! Subscribe and get notified Notify Me &copy; Copyright
-    Ping. All rights reserved.
+    <main id="main">
+      <div class="container">
+        <img src="./images/logo.svg" alt="logo" class="logo" />
+        <h1 class="title">
+          We are launching <span class="text-highlight">soon!</span>
+        </h1>
+        <p class="sub-title">Subscribe and get notified</p>
+        <div class="form" id="form">
+          <input type="email" id="input-email" class="input-control" />
+          <button class="btn" id="btn-submit">Notify Me</button>
+        </div>
 
+        <img
+          src="./images/illustration-dashboard.png"
+          alt="illustration dashboard"
+          class="dashboard"
+        />
+        <div class="socials-list">
+          <span class="social"><i class="fa-brands fa-facebook-f"></i></span>
+          <span class="social"><i class="fa-brands fa-twitter"></i></span>
+          <span class="social"><i class="fa-brands fa-instagram"></i></span>
+        </div>
+        <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+      </div>
+    </main>
     <footer>
       <p class="attribution">
         Challenge by
