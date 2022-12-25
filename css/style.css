@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.6rem;
+  place-items: center;
+}
+
+.container {
+  max-width: 64rem;
+}/*# sourceMappingURL=style.css.map */
