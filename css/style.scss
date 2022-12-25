@@ -18,3 +18,92 @@ body {
 .container {
   max-width: 64rem;
 }
+.logo {
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.title,
+.sub-title,
+.copyright {
+  text-align: center;
+}
+.title {
+  color: $gray;
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+}
+.sub-title {
+  color: $very-dark-blue;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+.text-highlight {
+  color: $very-dark-blue;
+  font-weight: 700;
+}
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 9rem;
+}
+.input-control {
+  border: 1px solid $pale-blue;
+  border-radius: 3rem;
+  flex: 2;
+  outline: none;
+  padding: 2rem 3rem;
+  transition: all 0.3s ease;
+}
+.input-control:active,
+.input-control:focus {
+  border: 1px solid $blue;
+}
+.btn {
+  background-color: $blue;
+  border: none;
+  border-radius: 3rem;
+  box-shadow: 0 3px 5px 2px $pale-blue;
+  color: #fff;
+  flex: 1;
+  font-weight: 600;
+  padding: 2rem 3rem;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.dashboard {
+  margin-bottom: 7rem;
+}
+.socials-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid hsla(0, 0%, 59%, 0.3);
+  border-radius: 50%;
+  color: $blue;
+  height: 3.5rem;
+  margin-right: 1.5rem;
+  padding: 0.8rem 1rem;
+  width: 3.5rem;
+  transition: all 0.3s ease;
+}
+.social:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: $blue;
+}
+.copyright {
+  color: $gray;
+  font-size: 1.2rem;
+}

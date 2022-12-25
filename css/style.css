@@ -12,4 +12,108 @@ body {
 
 .container {
   max-width: 64rem;
+}
+
+.logo {
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.title,
+.sub-title,
+.copyright {
+  text-align: center;
+}
+
+.title {
+  color: hsl(0deg, 0%, 59%);
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+.sub-title {
+  color: hsl(209deg, 33%, 12%);
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.text-highlight {
+  color: hsl(209deg, 33%, 12%);
+  font-weight: 700;
+}
+
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 9rem;
+}
+
+.input-control {
+  border: 1px solid hsl(223deg, 100%, 88%);
+  border-radius: 3rem;
+  flex: 2;
+  outline: none;
+  padding: 2rem 3rem;
+  transition: all 0.3s ease;
+}
+
+.input-control:active,
+.input-control:focus {
+  border: 1px solid hsl(223deg, 87%, 63%);
+}
+
+.btn {
+  background-color: hsl(223deg, 87%, 63%);
+  border: none;
+  border-radius: 3rem;
+  box-shadow: 0 3px 5px 2px hsl(223deg, 100%, 88%);
+  color: #fff;
+  flex: 1;
+  font-weight: 600;
+  padding: 2rem 3rem;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.dashboard {
+  margin-bottom: 7rem;
+}
+
+.socials-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid hsla(0deg, 0%, 59%, 0.3);
+  border-radius: 50%;
+  color: hsl(223deg, 87%, 63%);
+  height: 3.5rem;
+  margin-right: 1.5rem;
+  padding: 0.8rem 1rem;
+  width: 3.5rem;
+  transition: all 0.3s ease;
+}
+
+.social:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: hsl(223deg, 87%, 63%);
+}
+
+.copyright {
+  color: hsl(0deg, 0%, 59%);
+  font-size: 1.2rem;
 }/*# sourceMappingURL=style.css.map */
