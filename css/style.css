@@ -51,20 +51,50 @@ body {
 }
 
 .input-control {
+  flex: 2.5;
+}
+
+.text-error {
+  color: hsl(354deg, 100%, 66%);
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  visibility: hidden;
+}
+
+.input-control input {
   border: 1px solid hsl(223deg, 100%, 88%);
   border-radius: 3rem;
-  flex: 2;
+  min-width: 100%;
   outline: none;
   padding: 2rem 3rem;
   transition: all 0.3s ease;
 }
 
-.input-control:active,
-.input-control:focus {
+input.error {
+  border: 1px solid hsl(354deg, 100%, 66%);
+}
+
+input::-moz-placeholder {
+  color: hsl(223deg, 100%, 88%);
+}
+
+input:-ms-input-placeholder {
+  color: hsl(223deg, 100%, 88%);
+}
+
+input::placeholder {
+  color: hsl(223deg, 100%, 88%);
+}
+
+input:active,
+input:focus {
   border: 1px solid hsl(223deg, 87%, 63%);
 }
 
 .btn {
+  align-self: flex-start;
   background-color: hsl(223deg, 87%, 63%);
   border: none;
   border-radius: 3rem;

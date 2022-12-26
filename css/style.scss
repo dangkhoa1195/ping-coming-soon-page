@@ -49,18 +49,36 @@ body {
   margin-bottom: 9rem;
 }
 .input-control {
+  flex: 2.5;
+}
+.text-error {
+  color: $light-red;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  visibility: hidden;
+}
+.input-control input {
   border: 1px solid $pale-blue;
   border-radius: 3rem;
-  flex: 2;
+  min-width: 100%;
   outline: none;
   padding: 2rem 3rem;
   transition: all 0.3s ease;
 }
-.input-control:active,
-.input-control:focus {
+input.error {
+  border: 1px solid $light-red;
+}
+input::placeholder {
+  color: $pale-blue;
+}
+input:active,
+input:focus {
   border: 1px solid $blue;
 }
 .btn {
+  align-self: flex-start;
   background-color: $blue;
   border: none;
   border-radius: 3rem;
