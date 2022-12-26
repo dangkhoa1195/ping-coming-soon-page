@@ -6,6 +6,12 @@ $light-red: hsl(354, 100%, 66%);
 $gray: hsl(0, 0%, 59%);
 $very-dark-blue: hsl(209, 33%, 12%);
 
+@mixin max-width {
+  @media screen and (max-width: 540px) {
+    @content;
+  }
+}
+
 html {
   font-size: 62.5%;
 }
@@ -17,6 +23,7 @@ body {
 }
 .container {
   max-width: 64rem;
+  padding: 2rem;
 }
 .logo {
   margin: 0 auto;
@@ -31,6 +38,9 @@ body {
   color: $gray;
   font-size: 4.5rem;
   margin-bottom: 2rem;
+  @include max-width() {
+    font-size: 4rem;
+  }
 }
 .sub-title {
   color: $very-dark-blue;
@@ -47,17 +57,30 @@ body {
   justify-content: space-between;
   gap: 1.5rem;
   margin-bottom: 9rem;
+  @include max-width() {
+    flex-direction: column;
+    padding: 0 3rem;
+  }
 }
 .input-control {
   flex: 2.5;
+  @include max-width() {
+    align-self: stretch;
+  }
 }
 .text-error {
   color: $light-red;
+  display: none;
   font-size: 1.2rem;
   font-style: italic;
   margin-left: 3rem;
   margin-top: 1rem;
-  visibility: hidden;
+  @include max-width() {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    margin-left: 0;
+    text-align: center;
+  }
 }
 .input-control input {
   border: 1px solid $pale-blue;
@@ -88,6 +111,10 @@ input:focus {
   font-weight: 600;
   padding: 2rem 3rem;
   transition: all 0.3s ease;
+  @include max-width() {
+    align-self: stretch;
+    flex: 1;
+  }
 }
 .btn:hover {
   cursor: pointer;

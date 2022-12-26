@@ -12,6 +12,7 @@ body {
 
 .container {
   max-width: 64rem;
+  padding: 2rem;
 }
 
 .logo {
@@ -29,6 +30,11 @@ body {
   color: hsl(0deg, 0%, 59%);
   font-size: 4.5rem;
   margin-bottom: 2rem;
+}
+@media screen and (max-width: 540px) {
+  .title {
+    font-size: 4rem;
+  }
 }
 
 .sub-title {
@@ -49,18 +55,37 @@ body {
   gap: 1.5rem;
   margin-bottom: 9rem;
 }
+@media screen and (max-width: 540px) {
+  #form {
+    flex-direction: column;
+    padding: 0 3rem;
+  }
+}
 
 .input-control {
   flex: 2.5;
 }
+@media screen and (max-width: 540px) {
+  .input-control {
+    align-self: stretch;
+  }
+}
 
 .text-error {
   color: hsl(354deg, 100%, 66%);
+  display: none;
   font-size: 1.2rem;
   font-style: italic;
   margin-left: 3rem;
   margin-top: 1rem;
-  visibility: hidden;
+}
+@media screen and (max-width: 540px) {
+  .text-error {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
 .input-control input {
@@ -104,6 +129,12 @@ input:focus {
   font-weight: 600;
   padding: 2rem 3rem;
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 540px) {
+  .btn {
+    align-self: stretch;
+    flex: 1;
+  }
 }
 
 .btn:hover {

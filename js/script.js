@@ -6,13 +6,13 @@ btnSubmit.addEventListener('click', event => {
   const validRegex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   if (!inputEmail.value.match(validRegex)) {
-    textError.style.visibility = 'visible';
+    textError.style.display = 'block';
     inputEmail.classList.add('error');
     inputEmail.placeholder = 'example@email/com';
   }
 });
 inputEmail.addEventListener('focus', () => {
-  textError.style.visibility = 'hidden';
+  textError.style.display = 'none';
   inputEmail.classList.remove('error');
   inputEmail.placeholder = '';
 });
